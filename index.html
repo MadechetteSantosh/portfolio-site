@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santosh Portfolio</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <!-- Header / Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Santosh</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="themeToggle" class="theme-btn">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+    <div class="container home-flex">
+        <div class="home-text">
+    <h1>Hello, I'm <span>Santosh</span></h1>
+    <p>I'm a B.Tech CSE student passionate about Web Development & Python.</p>
+
+    <a href="#projects" class="btn">View My Work</a>
+
+    <div class="social-links">
+        <a href="https://github.com/MadechetteSantosh" target="_blank">GitHub</a>
+        <a href="mailto:santoshmadechette@gmail.com">Email</a>
+        <a href="#" target="_blank">LinkedIn</a> <!-- change # when you have LinkedIn -->
+    </div>
+</div>
+
+        <div class="home-photo">
+           <img src="assets/santosh.png" alt="Santosh Photo">
+        </div>
+    </div>
+</section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I'm a 2nd year B.Tech CSE student with interest in Front-End Development,
+                Python programming, and building projects that help me learn new skills.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill-box">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Python</span>
+                <span>C Programming</span>
+                <span>Java</span>
+                <span>Git & GitHub</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+
+            <div class="project-card">
+                <h3>UID Review Webpage</h3>
+                <p>Built a simple product review webpage using HTML, CSS, and JavaScript.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Personal Finance Tracker</h3>
+                <p>Java mini-project to track income and expenses.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Auto-Stop Car (Arduino)</h3>
+                <p>Arduino-based collision detection project written in C programming.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name">
+                <input type="email" id="email" placeholder="Your Email">
+                <textarea id="message" placeholder="Your Message"></textarea>
+                <button type="button" onclick="submitForm()">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
